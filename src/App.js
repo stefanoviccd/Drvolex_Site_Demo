@@ -1,23 +1,45 @@
-import logo from './logo.svg';
+import './components/navbar/navbar.css';
+import './components/header/header.css';
+import './components/main-page/main-page.css';
+import './components/footer/footer.css';
+import './components/main-page/main-page.css';
+import './components/contact/contact.css';
 import './App.css';
+import './index.css';
+import Navbar from './components/navbar/Navbar';
+import Header from './components/header/Header';
+import MainPage from './components/main-page/MainPage';
+import Footer from './components/footer/Footer';
+import Contact from './components/contact/Contact';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+        <Navbar />
+      <BrowserRouter>
+      
+      <Routes>
+        <Route
+          path="/"
+          element={<>  <Header></Header><MainPage></MainPage></>
+          
+          }
+        />
+        
+        <Route path="/kontakt" element={<Contact></Contact>} />
+      </Routes>
+    </BrowserRouter>
+        <Footer></Footer>
+
+        
+
+      </div>
+      
     </div>
   );
 }
