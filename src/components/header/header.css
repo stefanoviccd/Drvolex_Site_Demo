@@ -1,0 +1,29 @@
+.header-img{
+    height: 600px;
+    
+}
+.header-img-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: black;
+    padding: 30px;
+    border-radius: 10px;
+    opacity: 30%;
+    font-family: 'Manrope', sans-serif;
+}
+
+
+  
+.name{
+    font-size: 40px;
+    letter-spacing: 30px;
+}
+.subtitle{
+    margin-top:10px;
+    font-size: 25px;
+    letter-spacing: 8px;
+}
+
