@@ -12,7 +12,7 @@ function Header() {
   return <div className="company_brand"><Carousel  showIndicators={false} stopOnHover={false} showArrows={true} showThumbs={false} infiniteLoop  useKeyboardArrows autoPlay interval={4000} transitionTime={3000}>
   <div>
       <img className='header-img'src="../header-images/photo_sajt_crop.jpg"/>
-      <div className='header-img-text'> <b className="name">DRVOLEKS</b><p className="subtitle">Gradimo poverenje.</p></div>
+      <div className='header-img-text'> <b className="name">DRVOLEX</b><p className="subtitle">Gradimo poverenje.</p></div>
      
   </div>
   
@@ -24,9 +24,10 @@ function Header() {
   <div>
   <img className='header-img'src="../header-images/photo_sajt6_crop.jpg"/>
   </div>
- 
 
-</Carousel></div>;
+
+</Carousel>
+</div>;
 }
 
 export default Header;

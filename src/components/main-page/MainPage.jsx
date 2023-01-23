@@ -1,45 +1,50 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function MainPage() {
-    return <div>
+    return <div className='main-page-first-div'>
         <div className='company_brand zoomIn'>
-            <p className='subtitle'>Mi smo preduzeće <b>DRVOLEKS</b></p>
-
-            <button className='btn-o-nama'>O nama</button>
+            <h2 className='subtitle'>Mi smo preduzeće <b>DRVOLEX</b></h2>
+            <button className='btn-o-nama'>
+              <a className="anchor-o-nama"href="/o_nama">O nama</a></button>
         </div>
-
-
         <div className='main-info'>
-            <p className='txt'>Bez obzira kakav se prostor oprema, Corpus omogućava jednostavno slaganje gotovih elemenata nameštaja u trodimenzionalni prostor. Jednostavnost i brzina su kod uređivanja enterijera osnovni zahtevi koje Corpus sa lakoćom ispunjava omogućavajući da se pažnja dizajnera i klijenta usmeri na ono najbitnije, funkcionalnost i estetiku. Simulacija se odvija u realnom vremenu, bez renderinga i zahvaljujući tome klijent dobija prirodan pogled na prostor kao i u stvarnom svetu. Celokupan projekat moguće je prikazati i u osnovi gde se kotiranje vrsi automatski. Klijent uz razbušen materijal, dobija i uputstvo za sklapanje kao i sav prateći okov, pa je sklapanje elemenata pojednostavljeno i klijentima koji nemaju iskustva u sklapanju nameštaja. Corpus takodje vrši i automatsku kalkulaciju troškova, tako da klijent u svakom trenutku zna cenu proizvoda.</p>
+            <p className='txt'>Bez obzira kakav prostor opremate, mi smo tu da Vam pružimo kvalitetnu i brzu uslugu.
+            Godinama u nazad firma Drvolex proizvodi nameštaj najrazličitije namene, za kućni ili poslovni prostor.
+            Sve što nam treba je Vaša zamisao, ostalo prepustite nama. Od ideje do trenutka kada nameštaj bude u Vašem domu, pružamo kompletnu uslugu po meri.
+            Da nisu samo priče, potvrđuje mnoštvo zadovoljnih klijenata sa kojima sa zadovoljstvom sarađujemo godinama u nazad.
+            Od samog početka trudimo se da naši proizvodi budu najvišeg kvaliteta, da pratimo aktuelne trendove i konstantno ulažemo u opremu 
+            koju koristimo u šta se i sami možete uveriti.
+            Firma Drvolex poslednjih godina konstantno raste i približava se gigantima u ovoj oblasti.</p>
         </div>
-        <div className='company_brand '>
-            <p className='subtitle'>Izdvajamo iz ponude</p>
+        <div className='company_brand'>
+            <h2 className='subtitle'>Izdvajamo iz ponude</h2>
             <div className='gallery'>
-<div className='gallery-img'><img className="glr-img" src="../ponuda/kuhinja_crop.jpg"></img>
+<div className='gallery-img'><img className="glr-img" src="../ponuda/kuhinja_crop.jpg" alt='Drvolex kuhinje'></img>
 <div className="middle">
-    <div className="text">Kuhinje<hr></hr></div>
+    <div className="text"><a className="stand-out-from-the-offer" href='/galerija/kuhinje'>Kuhinje</a><hr></hr></div>
   </div></div>
-<div className='gallery-img'><img  className="glr-img" src="../ponuda/kupatila_crop.jpg"></img>
+<div className='gallery-img'><img  className="glr-img" src="../ponuda/kupatila_crop.jpg" alt='Drvolex kupatila'></img>
 <div className="middle">
-    <div className="text">Kupatila<hr></hr></div>
+    <div className="text"><a className="stand-out-from-the-offer" href='/galerija/kupatila'>Kupatila</a><hr></hr></div>
   </div></div>
-<div className='gallery-img'><img  className="glr-img" src="../ponuda/plakari_crop.jpg"></img>
+<div className='gallery-img'><img  className="glr-img" src="../ponuda/plakari_crop.jpg" alt='Drvolex plakari'></img>
 <div className="middle">
-    <div className="text">Plakari<hr></hr></div>
+    <div className="text"><a className="stand-out-from-the-offer" href='/galerija/plakari'>Plakari</a><hr></hr></div>
   </div></div>
-<div className='gallery-img'><img className="glr-img" src="../ponuda/police_crop.jpg"></img>
+<div className='gallery-img'><img className="glr-img" src="../ponuda/police_crop.jpg" alt='Drvolex police'></img>
 <div className="middle">
-    <div className="text">Police<hr></hr></div>
+    <div className="text"><a className="stand-out-from-the-offer" href='/galerija/police'>Police</a><hr></hr></div>
   </div></div>
-<div className='gallery-img'><img className="glr-img" src="../ponuda/rasveta_crop.jpg"></img>
+<div className='gallery-img'><img className="glr-img" src="../ponuda/rasveta_crop.jpg" alt='Drvolex kancelarijska rasveta'></img>
 <div className="middle">
-    <div className="text">Led rasveta<hr></hr></div>
+    <div className="text"><a className="stand-out-from-the-offer" href='/galerija/kancelarijskiProstor'>Kancelarijski prostor</a><hr></hr></div>
   </div></div>
 
 
             </div>
 
-            <button className='btn-kompletna_ponuda'>Pogledaj kompletnu ponudu</button>
+            <button className='btn-kompletna_ponuda'><a href='/galerija/kuhinje'>Pogledaj kompletnu ponudu</a></button>
         </div>
        
     </div>
