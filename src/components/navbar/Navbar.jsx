@@ -1,38 +1,60 @@
 import React, {useState, useEffect} from 'react'
 import {AiOutlineMenu} from 'react-icons/ai';
-import {Link} from "react-router-dom";
+import { SiTestinglibrary } from 'react-icons/si';
+
 
 function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false)
   const toggleNav = () => {
+    console.log("Toogled!")
     setToggleMenu(!toggleMenu)
   }
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   useEffect(() => {
-
     const changeWidth = () => {
       setScreenWidth(window.innerWidth);
     }
 
+
     window.addEventListener('resize', changeWidth)
 
   }, [])
-  return ( 
-  <nav className='slide-left'>
-    {(toggleMenu || screenWidth > 500) && (<ul className="list">
+ 
+  document.addEventListener('DOMContentLoaded', function() {
+    var current = 0;
+    if(window.innerWidth > 550){
+      for (var i = document.links.length-1; i >= 0 ; i--) {
+ 
+        if (document.links[i].href === document.URL) {
+            current = i;
+        }
+    }
+    document.links[current].className = 'nav__link active';
+    }
     
+    } );
 
-      <li className="items"><a href='/'>POČETNA</a></li>
-      <li className="items">O NAMA</li>
-      <li className="items">GALERIJA</li>
-      <li className="items"><a href='/kontakt'>KONTAKT</a></li>
-       
+  return ( 
+    <><nav className='slide-left'>
+    {(toggleMenu || screenWidth > 500) && (<ul className="list nav">
+   <li>
+   <a href="#" className="navbar-brand">
+                <img src="../company/nenadex12.png" height="40" alt="CoolBrand"></img>
+            </a>
+   </li>
+      <li className="items"><a className="nav__link" href='/'>POČETNA</a></li>
+      <li className="items"><a className="nav__link" href='/o_nama'>O NAMA</a></li>
+      <li className="items"><a className="nav__link" href='/galerija/kuhinje'>GALERIJA</a></li>
+      <li className="items"><a className="nav__link" href='/kontakt' >KONTAKT</a></li>
     </ul>
-
     )}
-  
-  <button onClick={toggleNav} className="btn"><AiOutlineMenu></AiOutlineMenu></button>
-</nav> )
+
+    <button onClick={toggleNav} className="btn"><AiOutlineMenu></AiOutlineMenu></button>
+   
+
+</nav> 
+<script src='NavMenuFunction.js'></script></>
+  )
     
 }
 

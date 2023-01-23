@@ -1,37 +1,25 @@
-import React from 'react';
-import {RiMapPin2Line} from "react-icons/ri";
-import {AiOutlineMail} from "react-icons/ai";
-import {BsFillTelephoneFill} from "react-icons/bs"; 
-
+import React from 'react'
+import { FaAddressCard } from 'react-icons/fa';
+import { BsTelephoneOutbound } from 'react-icons/bs';
+import { RiMailSendLine } from 'react-icons/ri';
 function Contact() {
-  return <div>
-      <div className='emptySpace'></div>
-      <div className='title'> 
-      <div className="subtitle1">Tu smo za sva vaša pitanja.</div>
-      <div className="subtitle2">Radnim danima i subotom od 08:00 do 19:00 časova.</div>
-      <div >
-         <button className='mail'>Pošaljite nam poruku</button>
-      </div>
-      </div>
-      <div className='grid-template'>
-           <div className="left-align">
-              <div className='contact-info'>
-              <div className='kontakt-heading'>Kontakt informacije</div>
-                  <div className='kontakt'><RiMapPin2Line></RiMapPin2Line>  Dragomira Kulerića Boljševika 51, 15000 Šabac</div>
-                  <div className='kontakt'><BsFillTelephoneFill ></BsFillTelephoneFill> 064/2099225</div>
-                  <div className='kontakt'><AiOutlineMail ></AiOutlineMail> drvolex@gmail.com</div>
-                  </div></div>
-            <div className='logo-img'>
-                <img className="shadow-drop-2-br"src='../company/nenadex12.png'></img>
-            </div>
-
-            </div>
-        
+  return (
+   <div className='contactCover'>
+     <div className='contact_info scale-up-hor-center'>
+       <div className='details'><div ><FaAddressCard className='icon'></FaAddressCard></div><div>
+         Dragoljuba Kulezića Boljševika 49, 15000 Šabac</div></div>
+       <div className='details'>   <div className='details'><BsTelephoneOutbound className='icon-tel'></BsTelephoneOutbound>
+       </div><div className='short-text'>064/2099225 Nenad Despotović 065/2481177 Vlada Despotović</div></div>
+         <div className='details'>   <div className='details'><RiMailSendLine className='icon-mail'>
+          </RiMailSendLine></div>
+          <div className='short-text email-text'>drvolex@gmail.com
+          <button className='send-mail-btn'><a href="mailto: drvolex015@gmail.com">Pošalji poruku</a></button></div>
+        </div>
+       
+       </div>
+    </div>
       
-
-      
-     
-  </div>;
+  )
 }
 
-export default Contact;
+export default Contact
