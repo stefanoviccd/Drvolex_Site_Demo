@@ -311,6 +311,10 @@ filter:blur(0px)
     .services-btn{
         font-size: small;
     }
+    .about-img-text{
+        padding: 6vw !important;
+    }
+
 }
 @media  screen and (max-width: 700px) {
     .about-text{
@@ -328,6 +332,11 @@ filter:blur(0px)
     }
     .grid-1{
       display: block;
+    }
+    .about-main-picture{
+        
+      height: 20rem !important;
+
     }
     .vision-grid{
         display: block;
@@ -390,6 +399,10 @@ font-size: 20px;
 }
 
   
-  
+  @media screen and (max-width: 350px){
+    .vision-grid-left h1{
+        letter-spacing: 1.2rem !important;
+    }
+  }
   
 
