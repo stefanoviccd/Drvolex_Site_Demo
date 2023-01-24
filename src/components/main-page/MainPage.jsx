@@ -12,7 +12,7 @@ function MainPage() {
             <p className='txt'>Bez obzira kakav prostor opremate, mi smo tu da Vam pružimo kvalitetnu i brzu uslugu.
             Godinama u nazad firma Drvolex proizvodi nameštaj najrazličitije namene, za kućni ili poslovni prostor.
             Sve što nam treba je Vaša zamisao, ostalo prepustite nama. Od ideje do trenutka kada nameštaj bude u Vašem domu, pružamo kompletnu uslugu po meri.
-            Da nisu samo priče, potvrđuje mnoštvo zadovoljnih klijenata sa kojima sa zadovoljstvom sarađujemo godinama u nazad.
+            Da nisu samo priče, potvrđuje mnoštvo zadovoljnih klijenata sa kojima sa zadovoljstvom sarađujemo godinama unazad.
             Od samog početka trudimo se da naši proizvodi budu najvišeg kvaliteta, da pratimo aktuelne trendove i konstantno ulažemo u opremu 
             koju koristimo u šta se i sami možete uveriti.
             Firma Drvolex poslednjih godina konstantno raste i približava se gigantima u ovoj oblasti.</p>
