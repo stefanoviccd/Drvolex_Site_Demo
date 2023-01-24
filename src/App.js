@@ -89,8 +89,6 @@ function App() {
   const [kitchenImages]=useState([
     {name: '../kuhinje/kuhinja12.jpg'},
     {name: '../kuhinje/kuhinja13.jpg'},
-    {name: '../kuhinje/kuhinja15.jpg'},
-    {name: '../kuhinje/kuhinja16.jpg'},
     {name: '../kuhinje/kuhinja17.jpg'},
     {name: '../kuhinje/kuhinja19.jpg'},
     {name: '../kuhinje/kuhinja28.jpeg'},
