@@ -4,10 +4,10 @@ import { Fancybox as NativeFancybox } from "@fancyapps/ui/dist/fancybox.esm.js";
 import "@fancyapps/ui/dist/fancybox.css";
 
 function Fancybox(props) {
-  const delegate = props.delegate || "[data-fancybox]";
+  const delegate = "[data-fancybox]";
 
   useEffect(() => {
-    const opts = props.options || {};
+    const opts =  {};
 
     NativeFancybox.bind(delegate, opts);
 
