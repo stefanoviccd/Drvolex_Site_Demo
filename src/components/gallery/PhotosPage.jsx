@@ -43,7 +43,7 @@ checkPage();
   </ul>
   
     <div className="container">
-<Fancybox options={null} delegate={"[data-fancybox]"}>
+<Fancybox className="fancybox">
 {
 photos.slice((this_page-1)*12, (this_page-1)*12+12).map(img=>(
         <div className="item"><a  data-fancybox="gallery" href={img.name} ><img src={img.name} alt={alt} className="gallery-image"></img></a></div>

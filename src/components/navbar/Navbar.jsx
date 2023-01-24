@@ -23,7 +23,9 @@ function Navbar() {
   document.addEventListener('DOMContentLoaded', function() {
     var current = 0;
     if(window.innerWidth > 550){
+      
       for (var i = document.links.length-1; i >= 0 ; i--) {
+       // for (var i = 0; i <document.links.length ; i++) {
  
         if (document.links[i].href === document.URL) {
             current = i;
