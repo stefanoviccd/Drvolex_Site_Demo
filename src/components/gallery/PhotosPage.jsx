@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react';
 import Divider from '../divider/Divider';
-import Pagination from '../Pagination';
 import Fancybox from '../Fancybox';
 import "./photosPage.css";
 
