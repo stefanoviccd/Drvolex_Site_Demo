@@ -15,7 +15,7 @@ function About() {
   <div className='about-root'>
    <div className='grid-div first'><div className='grid-1'>
 <img className="about-main-picture" src='../company/Hala.jpeg'  alt="stolarska firma Drvolex"></img></div>
-<div className='grid-2'><div className='about-img-text'><h2><b>O nama</b></h2>
+<div className='grid-2'><div className='about-img-text'><h2><b>O <b>Drvolex-u</b></b></h2>
 <p>Preteča firme Drvolex nastala je davne 1951. godine i od samog početka ciljala je na kvalitet. Ponosni smo na svoje korene koji su negovali prave vrednosti a ovakvi kakve nas danas možete videti, postojimo od 2012. godine.
 </p>
 <p>Danas, zahvaljujući savremenim mašinama, softverskim rešenjima i materijalima enormnih proizvođača, izrađujemo nameštaj visokog kvaliteta, po Vašoj želji i meri.</p>

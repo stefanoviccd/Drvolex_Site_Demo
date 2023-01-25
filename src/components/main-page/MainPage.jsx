@@ -3,7 +3,7 @@ import React from 'react';
 function MainPage() {
     return <div className='main-page-first-div'>
         <div className='company_brand zoomIn'>
-            <h2 className='subtitle'>Mi smo preduzeće <b>DRVOLEX</b></h2>
+            <h2 className='subtitle'>Mi smo preduzeće <b className='b-drvolex'>DRVOLEX</b></h2>
             <button className='btn-o-nama'>
               <a className="anchor-o-nama"href="/o_nama">O nama</a></button>
         </div>
