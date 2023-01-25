@@ -1,4 +1,5 @@
 
+import React, { useState, useEffect } from 'react';
 import './components/header/header.css';
 import './components/main-page/main-page.css';
 import './components/contact/contact.css';
@@ -18,14 +19,45 @@ import Contact from './components/contact/Contact';
 import About from './components/about_page/About';
 import NotFound from './components/not_found/NotFound';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import React, {useState} from 'react';
 import PhotosPage from './components/gallery/PhotosPage';
+import Machinery from './components/machinery/Machinery';
 
 
 
 
 
 function App() {
+  const [theme, setTheme] = useState(
+        localStorage.getItem('theme') || 'dark'
+      );
+      const toggleTheme = () => {
+        if (theme === 'light') {
+          setTheme('dark');
+          var items=document.getElementsByClassName("items");
+          console.log(items);
+          items.className="items items-dark";
+        } else {
+          setTheme('light');
+    var items= document.getElementsByClassName("items");
+    items.classList.remove("items-dark");
+    
+    
+        }
+      };
+      useEffect(() => {
+      localStorage.setItem('theme', theme);
+       if (theme === 'light'){
+          document.body.classList.remove("dark");
+  
+      
+      }
+      else{
+        document.body.classList.add("dark");
+
+      }
+        
+      
+      }, [theme]);
   const [bathroomImages]=useState([
     {name: '../kupatila/kupatilo1.jpg'},
     {name: '../kupatila/kupatilo2.jpg'},
@@ -34,7 +66,6 @@ function App() {
     {name: '../kupatila/kupatilo5.jpg'},
     {name: '../kupatila/kupatilo6.jpg'},
     {name: '../kupatila/kupatilo7.jpg'}
-  
   
   ]);
   const [shelfImages]=useState([
@@ -77,13 +108,6 @@ function App() {
     {name: '../kancelarijski_prostor/kp19.jpeg'},
     {name: '../kancelarijski_prostor/kp31.jpeg'},
     {name: '../kancelarijski_prostor/kp33.jpeg'}
-
-    
-
-    
-
-
-  
   
   ]);
   const [kitchenImages]=useState([
@@ -97,7 +121,6 @@ function App() {
     {name: '../kuhinje/kuhinja31.jpeg'},
     {name: '../kuhinje/kuhinja32.jpeg'}
   
-  
   ]);
   const [wardrobeImages]=useState([    
     {name: '../plakari/plakar5.jpg'},
@@ -110,8 +133,6 @@ function App() {
     {name: '../plakari/plakar18.jpeg'},
     {name: '../plakari/plakar19.jpeg'},
     {name: '../plakari/plakar20.jpeg'}
-
-  
   
   ]);
   const [opremaImages]=useState([    
@@ -123,8 +144,6 @@ function App() {
     {name: '../oprema/obrada2.jpeg'},
     {name: '../oprema/opr1.jpeg'},
 
-  
-  
   ]);
   const [homeImages]=useState([    
     {name: '../razno/dom1.jpg'},
@@ -149,7 +168,7 @@ function App() {
   return (
     <div className="App">
       <div>
-        <Navbar />
+        <Navbar toggleTheme={toggleTheme} />
 
       <BrowserRouter>
       
@@ -166,6 +185,7 @@ function App() {
           
           }
         />
+        <Route path="/masine" element={<Machinery></Machinery>} />
         
         <Route path="/kontakt" element={<Contact></Contact>} />
         <Route path="/galerija/kuhinje" element={<><PhotosPage photos={kitchenImages}   alt={"Drvolex kuhinje"} page={1}></PhotosPage></>} />
