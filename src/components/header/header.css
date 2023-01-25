@@ -40,8 +40,9 @@
         margin-right: auto;
     
     }
-    .header-img-text b{
+   .name{
       font-size: 8vw;
+      letter-spacing: 20px;
     
     }
 
