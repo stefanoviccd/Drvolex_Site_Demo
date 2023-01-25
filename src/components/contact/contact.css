@@ -25,7 +25,7 @@
 .contact_info{
   width:40em;
   height: 17em;
-  margin: 2% auto !important;
+  margin: 1% auto !important;
   display: grid;
   grid-template-columns: 30% 30% 30%;
 

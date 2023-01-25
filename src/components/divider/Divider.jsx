@@ -12,8 +12,7 @@ function Divider() {
          <Link className='nav-link-d' to={"/galerija/kupatila"} style={{textDecoration:"none", color:"black"}}>Kupatila</Link>
          <Link className='nav-link-d' to={"/galerija/plakari"} style={{textDecoration:"none", color:"black"}}>Plakari</Link>
          <Link className='nav-link-d' to={"/galerija/police"} style={{textDecoration:"none", color:"black"}}>Police</Link>
-         <Link className='nav-link-d' to={"/galerija/kancelarijskiProstor"} style={{textDecoration:"none", color:"black"}}>Kancelarijski prostor</Link>
-         <Link className='nav-link-d' to={"/galerija/oprema"} style={{textDecoration:"none", color:"black"}}>Oprema</Link></div>
+         <Link className='nav-link-d' to={"/galerija/kancelarijskiProstor"} style={{textDecoration:"none", color:"black"}}>Kancelarijski prostor</Link></div>
          
         <div className="divider"></div></>
         

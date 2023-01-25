@@ -82,7 +82,7 @@
    text-align: center;
 }
 .txt{
-    width:58rem;
+   
     color: grey;
     margin: auto;
     display: block;
@@ -177,6 +177,14 @@ padding-top: 5rem;}
             overflow: auto;
             font-size: small;
         }
+      }
+
+      ::-webkit-scrollbar-thumb{
+    background: grey!important;
+
+      }
+      ::-webkit-scrollbar{
+        width: 5px;
       }
 
       
