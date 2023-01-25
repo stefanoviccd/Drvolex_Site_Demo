@@ -27,7 +27,7 @@ import Machinery from './components/machinery/Machinery';
 
 function App() {
   const [theme, setTheme] = useState(
-        localStorage.getItem('theme') || 'dark'
+        localStorage.getItem('theme') || 'light'
       );
       const toggleTheme = () => {
         if (theme === 'light') {
