@@ -1,5 +1,6 @@
 .header-img{
-    height: 600px;
+height:65vh;
+   margin-top: 2rem;
     
 }
 .header-img-text{
@@ -9,15 +10,13 @@
     transform: translate(-50%, -50%);
     color: white;
     background-color: black;
-    padding: 30px;
+    padding: 5rem;
     border-radius: 10px;
     opacity: 30%;
     font-family: 'Manrope', sans-serif;
     text-align: center;
 }
 
-
-  
 .name{
     font-size: 50px;
     letter-spacing: 30px;
@@ -29,6 +28,7 @@
 }
 .company_brand{
     overflow-x: hidden;
+    padding-top: 1rem
 }
 
 
