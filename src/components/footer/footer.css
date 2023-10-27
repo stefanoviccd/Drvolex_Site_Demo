@@ -4,8 +4,9 @@
     color:gray;
     --font-family: 'Manrope';
     font-weight: 30px;
+    font-size: 1em;
     display: grid;
-    grid-template-columns: 25% 25% 20% 25%;
+    grid-template-columns: 25% 25% 25% 25%;
     padding: 20px;
     width: 100vw;
     

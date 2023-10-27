@@ -14,8 +14,8 @@ function Contact() {
        </div><div className='short-text contact-text '><p>064/2099225 Nenad Despotović 065/2481177 Vlada Despotović</p></div></div>
          <div className='details'>   <div className='details'><RiMailSendLine className='icon-mail'>
           </RiMailSendLine></div>
-          <div className='short-text email-text contact-text'><p>drvolex@gmail.com</p>
-          <button className='send-mail-btn'><a href="mailto: drvolex015@gmail.com">Pošalji poruku</a></button></div>
+          <div className='short-text email-text contact-text'><p>drvolex.sabac@gmail.com</p>
+          <button className='send-mail-btn'><a href="mailto: drvolex.sabac@gmail.com">Pošalji poruku</a></button></div>
         </div>
        
        </div>
