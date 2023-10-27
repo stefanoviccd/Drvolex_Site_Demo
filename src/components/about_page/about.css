@@ -34,11 +34,12 @@ h1{
 }
 .btn-more{
 display: block;
-margin-top: 7%;
+width: 10rem !important;
+height: 3.5rem !important;
+margin-top:4rem;
+font-size: 1.2rem;
 margin-left: auto;
 margin-right: auto;
- width: 150px;
- height: 40px;
  background-color: rgb(40, 40, 40);
  border: none;
  border-radius: 5px;
@@ -149,9 +150,9 @@ margin-right: auto;
     .vision-grid-right p{
         text-align: center;
         border: 1px solid black;
-        padding: 1rem;
+        padding: 2rem;
         width: 40vw;
-        height: 8rem;
+        height: 7em;
         padding-top: 1.5rem;
     }
     .grid-four{
@@ -163,7 +164,7 @@ margin-right: auto;
     }
     .grid-four img{
         height: 20vw;
-        width: 25vw;
+        width: 23vw;
     }
 .divider{
     border-top: 2px solid black;
@@ -405,4 +406,3 @@ font-size: 20px;
     }
   }
   
-

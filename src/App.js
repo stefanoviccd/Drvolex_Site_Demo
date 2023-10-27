@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react';
 import './components/header/header.css';
 import './components/main-page/main-page.css';
 import './components/contact/contact.css';
-//import './components/about_page/about.css';
 import './components/footer/footer.css';
 import './App.css';
 import './index.css';
@@ -28,7 +27,7 @@ import Machinery from './components/machinery/Machinery';
 
 function App() {
   const [theme, setTheme] = useState(
-        localStorage.getItem('theme') || 'dark'
+        localStorage.getItem('theme') || 'light'
       );
       const toggleTheme = () => {
         if (theme === 'light') {
@@ -69,8 +68,6 @@ function App() {
   
   ]);
   const [shelfImages]=useState([
-   // {name: '../police/polica6.jpg'},
-    //{name: '../police/polica9.jpg'},
     {name: '../police/polica10.jpg'},
     {name: '../police/polica11.jpg'},
     {name: '../police/polica12.jpg'},

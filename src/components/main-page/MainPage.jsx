@@ -23,7 +23,7 @@ function MainPage() {
 <div className="middle">
     <div className="text"><a className="stand-out-from-the-offer" href='/galerija/kuhinje'>Kuhinje</a><hr></hr></div>
   </div></div>
-<div className='gallery-img'><img  className="glr-img" src="../ponuda/kupatila_crop.jpg" alt='Drvolex kupatila'></img>
+<div className='gallery-img'><img  className="glr-img" src="../ponuda/kupatila_crop1.jpg" alt='Drvolex kupatila'></img>
 <div className="middle">
     <div className="text"><a className="stand-out-from-the-offer" href='/galerija/kupatila'>Kupatila</a><hr></hr></div>
   </div></div>
